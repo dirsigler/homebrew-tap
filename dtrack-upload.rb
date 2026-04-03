@@ -11,7 +11,7 @@ class DtrackUpload < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.3.0/dtrack-upload_0.3.0_darwin_amd64.tar.gz"
-      sha256 "9520d7cf71e63edcd69ecf8f17e4d65197587bb786326f325ef75214d864dff1"
+      sha256 "c85137893b7f4eb78e2af775f004e00676c96465f1f7c4502a52be76fa24e067"
 
       define_method(:install) do
         bin.install "dtrack-upload"
@@ -19,7 +19,7 @@ class DtrackUpload < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.3.0/dtrack-upload_0.3.0_darwin_arm64.tar.gz"
-      sha256 "515c23f314d24882165b95564a8087e2ece827b0a6a50a450987c06cb29c0ace"
+      sha256 "6149bca25b97ccd1962bedd23bb3f1cfc3a99720be035e2f3ed8fe24311b1031"
 
       define_method(:install) do
         bin.install "dtrack-upload"
@@ -30,14 +30,14 @@ class DtrackUpload < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.3.0/dtrack-upload_0.3.0_linux_amd64.tar.gz"
-      sha256 "cebdbd7c01a2fa950c7a3fe335395a23aca00a71d2f255c59f497c4922518090"
+      sha256 "74bf5d881123664ca49d67ab22c6badc34127486d1c2a65678309acbf25aa59b"
       define_method(:install) do
         bin.install "dtrack-upload"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.3.0/dtrack-upload_0.3.0_linux_arm64.tar.gz"
-      sha256 "64faa4af07327e60a6b6c9f98c9b56e8754ebe53e64790b5e59a18ab1ad4d248"
+      sha256 "f257e178c105afa826c32665c056822dacb4b9c3f18bb03289317dd3f05e4d2b"
       define_method(:install) do
         bin.install "dtrack-upload"
       end
