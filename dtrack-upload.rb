@@ -5,21 +5,21 @@
 class DtrackUpload < Formula
   desc "Minimal CLI to upload CycloneDX SBOMs to Dependency Track"
   homepage "https://github.com/dirsigler/dtrack-upload"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.5.0/dtrack-upload_0.5.0_darwin_amd64.tar.gz"
-      sha256 "3bf30d3a59a4db966c2bc55d36163df39b1c71c7e12bafe373d1ac48c5abe224"
+      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.6.0/dtrack-upload_0.6.0_darwin_amd64.tar.gz"
+      sha256 "d4595cf312877b7eb5eecfd419cb166fa85936638496088fce8d1c81a4c91a72"
 
       define_method(:install) do
         bin.install "dtrack-upload"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.5.0/dtrack-upload_0.5.0_darwin_arm64.tar.gz"
-      sha256 "87b100657384b10d931bcebd851440a27ef0a50d30a1de44cd2b8db2ce16af27"
+      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.6.0/dtrack-upload_0.6.0_darwin_arm64.tar.gz"
+      sha256 "9895112504610f49fabf45ccc1070b412f13db3b185cb3483a9d0c03ddd8c604"
 
       define_method(:install) do
         bin.install "dtrack-upload"
@@ -29,15 +29,15 @@ class DtrackUpload < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.5.0/dtrack-upload_0.5.0_linux_amd64.tar.gz"
-      sha256 "a4ac9d86a483b04e053dcd1ea2c8cae9078e176cc61fda21ac72cc1cf307cccc"
+      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.6.0/dtrack-upload_0.6.0_linux_amd64.tar.gz"
+      sha256 "c551b2158c072d8d69ac78cd0d496824a5cf243dad04024a1a28be9cee3333a1"
       define_method(:install) do
         bin.install "dtrack-upload"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.5.0/dtrack-upload_0.5.0_linux_arm64.tar.gz"
-      sha256 "3f17fd091a2769a6a3c43244fbbfdb3b6b60f8702fe6a9956c801c80edda2c27"
+      url "https://github.com/dirsigler/dtrack-upload/releases/download/v0.6.0/dtrack-upload_0.6.0_linux_arm64.tar.gz"
+      sha256 "7729b4fafd30ce75b179dc2390e4ffdf7a65d2ac7b735599db4f51317667d7a9"
       define_method(:install) do
         bin.install "dtrack-upload"
       end
